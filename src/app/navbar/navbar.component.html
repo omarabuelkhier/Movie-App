@@ -1,0 +1,15 @@
+<nav class="navbar colorBasic p-3 sticky-top ">
+  <div class="container-fluid">
+    <a routerLink="/" class="navbar-brand fs-3 fw-bold text-white ms-4">Movie App</a>
+    <form class="d-flex">
+      <a routerLink='/watch-list' routerLinkActive="active-route" [routerLinkActiveOptions]="{ exact: true }"><fa-icon
+          class="fs-3 text-white" [icon]="faHeart"
+          style=" text-shadow: 0px 0px 20px #4d7c97, 0px 5px 30px #132530;"></fa-icon></a>
+      <a [routerLink]="['/watch-list']" class="btn fs-5 text-white fw-bold me-5">WatchList</a>
+      <span class="position-absolute translate-middle badge rounded-pill d-lg-inline"
+        style="top: 20px;left: 95%;background-color: #267488;">
+        {{counter}}
+      </span>
+    </form>
+  </div>
+</nav>

@@ -1,0 +1,22 @@
+.colorBasic {
+  color: white !important;
+  background-color: #6abcea !important;
+}
+@media (max-width: 415px) {
+  .badge {
+    left: 50% !important;
+    top: 7em !important;
+  }
+  .colorBasic {
+    width: calc(100% + 30px) !important;
+  }
+}
+@media (max-width: 768px) and (min-width: 410px) {
+  .badge {
+    left: 83% !important;
+    top: 2em !important;
+  }
+  .colorBasic {
+    width: calc(100% + 30px) !important;
+  }
+}

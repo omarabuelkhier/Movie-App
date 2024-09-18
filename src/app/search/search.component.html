@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <div class="mt-4 bg-light searchDiv rounded-5 py-5">
+    <h1 class="ms-5 fw-bold">Welcome to our Movie App</h1>
+    <p class="ms-5 fs-5">
+      Millions of movies, TV shows and people to discover. Explore now.
+    </p>
+
+    <!-- Search form -->
+    <div class="row g-2 justify-content-start align-items-center mt-4">
+      <div class="col-md-12 col-lg-9">
+        <input
+          type="search"
+          #input
+          class="form-control p-2 ms-5 fs-5 border border-3 rounded-4"
+          placeholder="Search for movies..."
+        />
+      </div>
+      <div class="col-md-3 col-lg-2">
+        <button
+          type="submit"
+          (click)="searchFn(input.value)"
+          class="btn colorCayan ms-5 fw-bold p-2 fs-4 text-white rounded-4 w-100"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

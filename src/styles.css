@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+   body {
+      height: 100%;
+      width: 100%;
+      background-color: #cccccc42;
+      font-family: 'Arimo', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #010b26;
+    }

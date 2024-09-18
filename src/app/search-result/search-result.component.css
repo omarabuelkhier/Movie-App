@@ -1,0 +1,29 @@
+.colorCayan {
+  background-color: #6ABCEA;
+}
+
+.colorCayan:hover {
+  background-color: #4A9BCC;
+}
+@media (max-width: 768px ) {
+  .search-container {
+      width: 50%;
+  }
+  input{
+      width: 80% !important;
+  }
+  .btn{
+      max-width:80% !important;
+  }
+}
+@media (max-width: 1200px ) {
+  .search-container {
+      width: 50%;
+  }
+  input{
+      width: 80% !important;
+  }
+  .btn{
+      width:80% !important;
+}
+}

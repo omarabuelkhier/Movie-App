@@ -1,0 +1,25 @@
+<div class="parent">
+    <h2 style="margin-left: 10%;padding-top: 20px;">Watch List</h2>
+    @if(watchList.length>0){
+        <div class="container h-100">
+            <div class="row">
+                @for(item of watchList; track item.id){
+              <div class="col-md-6">
+                <app-watch-list-card [movie]="item"></app-watch-list-card>
+              </div>
+            }
+            </div>
+          </div>
+    }@else {
+        <div class="no-movies-container">
+            <div class="no-movies-icon">
+              <i class="fas fa-heart-broken"></i>
+            </div>
+            <h3>No Movies in watch list</h3>
+            <button routerLink="/" class="btn back-button" style="width: 20rem">
+              Back to home
+            </button>
+          </div>
+        
+    }
+</div>

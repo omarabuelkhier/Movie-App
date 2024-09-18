@@ -1,0 +1,33 @@
+.colorCayan {
+    background-color: #6ABCEA;
+}
+.searchDiv{
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+}
+
+.colorCayan:hover {
+    background-color: #4A9BCC; /* darker shade for hover effect */
+}
+@media (max-width: 768px ) {
+    .search-container {
+        width: 50%;
+    }
+    input{
+        width: 80% !important;
+    }
+    .btn{
+        max-width:80% !important;
+    }
+}
+@media (max-width: 1200px ) {
+    .search-container {
+        width: 50%;
+    }
+    input{
+        width: 80% !important;
+    }
+    .btn{
+        width:80% !important;
+    }
+}

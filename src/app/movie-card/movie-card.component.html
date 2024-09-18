@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="container mx-auto py-3">
+    <div class="col">
+      <div class="card rounded rounded-5">
+        <div class="col-8">
+          <span class="badge rounded-pill text-center fs-6">
+            {{ movieData.release_date | customDate }}
+          </span>
+        </div>
+        <img
+          [src]="'https://image.tmdb.org/t/p/w500/' + movieData.poster_path"
+          class="card-img-top bg-dark rounded rounded-top-5"
+        />
+        <div class="header-icon-container">
+          <a (click)="navigateToDetails(movieData.id)">
+            <i class="material-icons header-icon"></i>
+          </a>
+        </div>
+        <div class="card-body pe-4">
+          <div class="row">
+            <div class="col-10" style="height: 60px; overflow: hidden">
+              <span class="card-title text-start fs-5 fw-bold">{{
+                movieData.original_title
+              }}</span>
+              <p class="card-text">{{ movieData.description }}</p>
+            </div>
+            <div class="col-2 text-center me-md-1 me-lg-1 me-xl-0">
+              <i
+                [class]="
+                  (isHoverd ? 'fa-solid ' : 'fa-regular ') +
+                  'fa-heart fs-2 movie-favorite'
+                "
+                (click)="hoverd()"
+              ></i>
+            </div>
+          </div>
+          <div class="container text-center mt-2">
+            <i class="fa-solid fa-star fs-5"></i>
+            <span class="fs-6 text-secondary">
+              {{ (movieData.vote_average / 2).toFixed(1) }}
+            </span>
+            <span class="fs-6 text-secondary">
+              ({{ movieData.vote_count }} votes)
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

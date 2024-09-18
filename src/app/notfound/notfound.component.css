@@ -1,0 +1,22 @@
+.vh-100 {
+    height: 100vh;
+  }
+  .display-1 {
+    font-size: 6rem;
+  }
+  .lead {
+    font-size: 1.5rem;
+  }
+  .btn-primary {
+    background-color: #4497c7;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  .btn-primary:hover {
+    background-color: #599dd9;
+    color: #fff;
+    transform: scale(1.1);
+  }
+  .text-primary {
+    color: #4497c7 !important;
+  }
